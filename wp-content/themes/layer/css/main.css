@@ -114,9 +114,16 @@ body {
   margin-left: auto;
   margin-right: 20px;
 }
+.header-contacts>div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+} 
 
-.header-contacts span {
+.header-contacts h4 {
+  margin:0;
   color: var(--color-red-dark);
+
 }
 
 .header-contacts a {
@@ -237,6 +244,9 @@ button.secondary-nav-description{
 .secondary-nav a {
   display: block;
   text-decoration: none;
+}
+
+.secondary-nav-description {
   margin: 10px 0;
   max-width: 240px;
   color: var(--color-white);
@@ -268,11 +278,11 @@ button.secondary-nav-description{
   box-shadow: 5px 5px 10px 0 black;
 }
 
-.criminal-case .secondary-nav-picture {
+.secondary-nav-picture:nth-child(2n) {
   background-image: url('../img/human-rights.jpg');
 }
 
-.civil-case .secondary-nav-picture {
+.secondary-nav-picture:nth-child(2n+1) {
   background-image: url('../img/human-rights.jpg');
 }
 
@@ -291,13 +301,13 @@ button.secondary-nav-description:focus{
 button.secondary-nav-description:active{
   background-color: var(--color-red);
 }
-.secondary-nav a:hover,
-.secondary-nav a:focus {
+.secondary-nav a:hover .secondary-nav-description,
+.secondary-nav a:focus .secondary-nav-description {
   background-color: var(--color-red-transparent);
   transform: translateX(20px);
 }
 
-.secondary-nav a:active {
+.secondary-nav a:active .secondary-nav-description {
   background-color: var(--color-red);
 
 }

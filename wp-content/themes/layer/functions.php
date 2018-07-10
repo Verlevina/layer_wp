@@ -45,7 +45,8 @@ if ( ! function_exists( 'layer_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'mainMenu' => esc_html__( 'Primary', 'layer' ),
-			'rightMenu' => esc_html__( 'Sidebar', 'layer1' ),
+			'rightMenu' => esc_html__( 'Sidebar', 'layer' ),
+			// 'rightMenu' => esc_html__( 'SideBar, 'layer1' ),
 		) );
 
 		/*
@@ -109,10 +110,30 @@ function layer_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'layer' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'layer' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<section id="%1$s" class=" %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<h2 class="contacts-title">',
 		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Contacts', 'layer' ),
+		'id'            => 'contacts',
+		'description'   => esc_html__( 'Your contacts', 'layer' ),
+		'before_widget' => '<section id="%1$s" class="header-contacts %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'logo', 'layer' ),
+		'id'            => 'logo',
+		'description'   => esc_html__( 'Your name', 'layer' ),
+		'before_widget' => '<div id="%1$s" class="logo %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => false,
+		'after_title'   => false,
 	) );
 }
 add_action( 'widgets_init', 'layer_widgets_init' );

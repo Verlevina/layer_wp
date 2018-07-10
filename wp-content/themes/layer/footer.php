@@ -11,26 +11,32 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'layer' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'layer' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'layer' ), 'layer', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
 <?php wp_footer(); ?>
 
+</body>
+</html>
+  </main>
+</div>
+<footer class="main-footer">
+  <div class="container">
+	<?php
+			if ( !is_front_page() && !is_home() ) :
+				?>
+      <a class="main-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+      	<?php endif?>
+        <?php dynamic_sidebar( 'logo' ); ?>
+        	<?php
+			if ( !is_front_page() && !is_home() ) :
+				?>
+      </a>
+<?php endif?>
+  <?php dynamic_sidebar( 'contacts' ); ?>
+
+    <button class="modal-button" type="button">
+      Остались вопросы?<br>
+      Напишите мне!
+    </button>
+  </div>
+</footer>
 </body>
 </html>
