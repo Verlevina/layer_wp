@@ -60,8 +60,7 @@
 
     		<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'theme_location' => 'mainMenu',
 			) );
 			?>
     </nav>
@@ -74,46 +73,14 @@
       </div>
       <div>
       <button class="secondary-nav-description" type="button">Адвокатская практика</button>
-      <ul class="secondary-nav">
-        <li class="criminal-case">
-          <a href="#">
-            <div class="secondary-nav-picture">
 
-            </div>
-            <div class="secondary-nav-description">
-              Уголовные дела
-            </div>
-          </a>
-        </li>
-        <li class="civil-case"><a href="#">
-          <div class="secondary-nav-picture">
-          </div>
-          <div class="secondary-nav-description">
-            Гражданские дела
-          </div>
-        </a>
-        </li>
-        <li class="administrative-case">
-          <a href="#">
-            <div class="secondary-nav-picture">
-
-            </div>
-            <div class="secondary-nav-description">
-              Административные дела
-            </div>
-          </a>
-        </li>
-        <li class="human-rights">
-          <a href="#">
-            <div class="secondary-nav-picture">
-
-            </div>
-            <div class="secondary-nav-description">
-              Европейский суд по правам человека
-            </div>
-          </a>
-        </li>
-      </ul>
+      	    		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'rightMenu',
+				'items_wrap'      => '<ul  class="secondary-nav">%3$s</ul>',
+				'container'       => false, 
+			) );
+			?>
         </div>
     </section>
   </header>

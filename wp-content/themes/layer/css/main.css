@@ -237,9 +237,6 @@ button.secondary-nav-description{
 .secondary-nav a {
   display: block;
   text-decoration: none;
-}
-
-.secondary-nav-description {
   margin: 10px 0;
   max-width: 240px;
   color: var(--color-white);
@@ -294,13 +291,13 @@ button.secondary-nav-description:focus{
 button.secondary-nav-description:active{
   background-color: var(--color-red);
 }
-.secondary-nav a:hover .secondary-nav-description,
-.secondary-nav a:focus .secondary-nav-description {
+.secondary-nav a:hover,
+.secondary-nav a:focus {
   background-color: var(--color-red-transparent);
   transform: translateX(20px);
 }
 
-.secondary-nav a:active .secondary-nav-description {
+.secondary-nav a:active {
   background-color: var(--color-red);
 
 }

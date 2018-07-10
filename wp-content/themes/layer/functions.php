@@ -44,7 +44,8 @@ if ( ! function_exists( 'layer_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'layer' ),
+			'mainMenu' => esc_html__( 'Primary', 'layer' ),
+			'rightMenu' => esc_html__( 'Sidebar', 'layer1' ),
 		) );
 
 		/*
