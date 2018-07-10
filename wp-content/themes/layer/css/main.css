@@ -114,10 +114,11 @@ body {
   margin-left: auto;
   margin-right: 20px;
 }
-.header-contacts>div{
+.header-contacts>div {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  flex-wrap: wrap;
 } 
 
 .header-contacts h4 {
@@ -188,7 +189,6 @@ body {
 .main-menu a:focus{
   opacity:0.6;
   color:var(--color-red);
-  font-weight: bold;
 }
 .main-menu a:active{
   opacity:0.4;
