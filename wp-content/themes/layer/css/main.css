@@ -353,7 +353,6 @@ li.current_page_item div{
 }
 
 .main-content hr {
-
   border: 0;
   height: 2px;
   background-image: -webkit-linear-gradient(left, transparent 0%, #000 50%, transparent 100%);
@@ -373,16 +372,33 @@ li.current_page_item div{
 }
 
 
-.main-content p,
-.main-content ul {
+.entry-content,
+.main-content .post{
   text-indent: 20px;
   margin-bottom: 40px;
-  padding: 20px;
-  line-height: 40px;
+  padding: 20px 40px;
+  line-height: 30px;
   background: rgba(0,0,0,0.4);
   box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.8);
 }
 
+.entry-content ul,
+.entry-content ol{
+  margin-left:20px;
+}
+.entry-content iframe{
+  height: 400px;
+  width: 90%;               
+  width: calc(100% - 40px);
+}
+.post .entry-content{
+    background: none;
+  box-shadow: none;
+  line-height: 30px;
+}
+.post .entry-title{
+  text-align: center;
+}
 .main-content ul {
 margin:0;
 margin-bottom:20px;
