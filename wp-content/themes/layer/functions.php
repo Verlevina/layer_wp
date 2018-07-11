@@ -107,16 +107,6 @@ add_action( 'after_setup_theme', 'layer_content_width', 0 );
  */
 function layer_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'layer' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'layer' ),
-		'before_widget' => '<section id="%1$s" class=" %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="contacts-title">',
-		'after_title'   => '</h2>',
-	) );
-
-	register_sidebar( array(
 		'name'          => esc_html__( 'Contacts', 'layer' ),
 		'id'            => 'contacts',
 		'description'   => esc_html__( 'Your contacts', 'layer' ),
@@ -150,7 +140,7 @@ function layer_scripts() {
 
 	wp_enqueue_script( 'layer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'layer-skip-link-focus-fix', get_template_directory_uri() . '/js/main.js', array(), '', true );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

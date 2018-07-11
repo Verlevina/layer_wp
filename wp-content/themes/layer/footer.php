@@ -38,5 +38,6 @@
     </button>
   </div>
 </footer>
+<script src="<?php get_template_directory_uri().'/js/main.js'?>"></script>
 </body>
 </html>
