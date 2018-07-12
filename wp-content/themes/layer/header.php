@@ -63,7 +63,7 @@
           <span class="practiceInYears"></span>
         </p>
       </div>
-      <div>
+      <div class='secondary-menu-wrap'>
       <button class="secondary-nav-description" type="button">Адвокатская практика</button>
 
       	    		<?php

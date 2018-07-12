@@ -358,6 +358,9 @@ button.secondary-nav-description:focus{
 button.secondary-nav-description:active{
   background-color: rgb(255, 0, 0);
 }
+.secondary-menu-wrap{
+  overflow: hidden;
+}
 .secondary-nav a:hover .secondary-nav-description,
 .secondary-nav a:focus .secondary-nav-description {
   background-color: rgba(255, 0, 0, 0.5);
@@ -686,6 +689,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
 .visibleSecondaryNav{
   display:flex;
 }
+
 .visibleMainMenu{
   display:block;
 }

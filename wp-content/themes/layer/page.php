@@ -15,8 +15,6 @@
 get_header();
 ?>
 
-
-<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();
