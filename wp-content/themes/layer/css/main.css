@@ -614,6 +614,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
   button.secondary-nav-description{
     display:block;
   }
+
 }
 
 @media (max-width: 500px) {
@@ -689,6 +690,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
 .visibleSecondaryNav{
   display:flex;
 }
+
 
 .visibleMainMenu{
   display:block;
