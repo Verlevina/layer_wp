@@ -32,7 +32,7 @@
   <header class="main-header">
     <div class="top-header">
 	<?php
-			if ( !is_front_page() && !is_home() ) :
+			if ( !is_front_page() ) :
 				?>
       <a class="main-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
       	<?php endif?>
@@ -45,7 +45,7 @@
 		<?php dynamic_sidebar( 'contacts' ); ?>
 	</div>
     <button class="open-menu" type="button">
-      =
+      <div class="open-menu-icon"></div>
     </button>
     <nav class="main-menu">
 

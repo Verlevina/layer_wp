@@ -1,7 +1,7 @@
 var experienceText = document.querySelector('.practiceInYears');
 var experience = 0;
 var dateNow = new Date();
-var beginPractice = new Date(2005, 0, 1, 2, 3, 4, 567);
+var beginPractice = new Date(2012, 0, 1, 2, 3, 4, 567);
 experience = dateNow.getFullYear() - beginPractice.getFullYear();
 function declarationOfNumbers(number, titles) {
   if(number < 20 && number >10){
@@ -46,7 +46,29 @@ var mainMenu = document.querySelector('.main-menu');
 var buttonOpenMenu= document.querySelector('button.open-menu');
 buttonOpenMenu.addEventListener('click',function(){
   mainMenu.classList.toggle('visibleMainMenu');
-  // var pattern = document.createElement('div');
-  // pattern.classList.add('pattern');
-  // document.body.appendChild(pattern);
+  buttonOpenMenu.classList.toggle('visibleMainMenuButton');
 });
+
+
+
+// модальное окно
+var modalWindow = document.querySelector('.modal');
+var modalOpen = document.querySelector('.modal-button');
+var modalClose = document.querySelector('.close-modal');
+
+if(!modalWindow.classList.contains('open')){
+openModal();
+}
+
+closeModal();
+
+function openModal(){
+    modalOpen.addEventListener('click', function() {
+        modalWindow.classList.add('open');
+    })
+}
+  function closeModal(){
+        modalClose.addEventListener('click', function() {
+        modalWindow.classList.remove('open');
+    })
+}

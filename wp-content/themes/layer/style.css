@@ -474,7 +474,7 @@ body {
 }
 
 hr {
-	background-color: #ccc;
+	background-color: none;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
