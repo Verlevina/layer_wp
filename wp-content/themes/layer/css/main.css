@@ -488,6 +488,7 @@ padding-left:60px;
   border: 2px solid #6d0808;
   text-align: center;
   border-radius: 10px;
+  line-height: 20px;
   padding: 5px;
   color: #ffffff;
   text-shadow: 3px 3px 3px black;
@@ -572,6 +573,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
 .open{
   display:block;
 }
+
 @media (max-width: 850px) {
   .main-menu{
     display:none;
