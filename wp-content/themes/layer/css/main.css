@@ -77,7 +77,7 @@ body {
 }
 
 .main-link {
-  padding: 0;
+  padding: 0 10px;
   display: block;
   text-decoration: none;
 }
@@ -494,6 +494,7 @@ padding-left:60px;
   padding: 5px;
   color: #ffffff;
   text-shadow: 3px 3px 3px black;
+  cursor:pointer;
 }
 .modal-button:hover,
 .modal-button:focus{
@@ -697,7 +698,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
   .entry-content ul,
   .entry-content ol,
   .entry-content blockquote{
-  margin-left: 10px;
+  margin-left: 20px;
   padding-left:0;
   }
   .entry-content li,
