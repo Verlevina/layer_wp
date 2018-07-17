@@ -447,8 +447,8 @@ li.current_page_item div{
 
 .entry-content iframe{
   height: 400px;
-  width: 90%;               
-  width: calc(100% - 40px);
+    width: 100%;
+    margin-left: -20px
 }
 
 .post .entry-title{
@@ -724,6 +724,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
    .entry-content img{
     margin-left:-10px;
    }
+   .entry-content iframe{
+     margin-left: -10px
+}
   .modal-button{
     margin-top: 10px;
     align-items: flex-end;
