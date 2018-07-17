@@ -439,7 +439,11 @@ li.current_page_item div{
 .entry-content ol{
   margin-left:20px;
 }
-
+.entry-content img{
+  margin:auto;
+  margin-left:-20px;
+  max-width:100%;
+}
 
 .entry-content iframe{
   height: 400px;
@@ -548,6 +552,7 @@ padding-left:60px;
 }
 .modal{
     position: fixed;
+    max-width: 363px;
     display: none;
     top: 30px;
     left: 50%;
@@ -563,6 +568,15 @@ padding-left:60px;
 .modal input[type='email']{
   width:100%;
   box-sizing: border-box;
+}
+.modal textarea{
+   height: 100px;
+} 
+span.wpcf7-not-valid-tip{
+  font-size:12px;
+}
+div.wpcf7-validation-errors{
+    font-size:12px;
 }
 .modal input[type='submit']{
   margin: auto;
@@ -670,9 +684,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
     flex-direction: column;
   }
   .modal{
+    top:5px;
     left:0;
     margin-left: 0;
     width: 100%;
+    max-width: 100%;
   }
   .main-content{
     padding:10px;
@@ -705,6 +721,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
   .entry-content blockquote{
     margin:10px 0;
   }
+   .entry-content img{
+    margin-left:-10px;
+   }
   .modal-button{
     margin-top: 10px;
     align-items: flex-end;
