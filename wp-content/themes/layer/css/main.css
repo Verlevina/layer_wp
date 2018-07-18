@@ -268,7 +268,6 @@ li.current_page_item a{
 
 .bottom-header .photo {
   flex-grow: 2;
-  max-width: 700px;
   background-color: #eda26b;
   background-image: url('../img/layer.jpg');
   background-repeat: no-repeat;
@@ -768,6 +767,19 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
 
 .visibleMainMenu{
   display:block;
+  animation-name: showMenu;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; 
+}
+
+@keyframes showMenu {
+  0% {
+    transform: translateY(-150px);
+  }
+
+   100% {
+    transform: translateY(0px);
+  }
 }
 
 
