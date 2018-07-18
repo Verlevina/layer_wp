@@ -290,6 +290,7 @@ button.secondary-nav-description{
 }
 .secondary-nav {
   margin: 0;
+  height: 100%;
   flex-grow: 0;
   padding: 0;
   padding-left: 110px;
