@@ -30,7 +30,14 @@
 <![endif]-->
 <div class="wrapper">
   <header class="main-header">
-    <div class="top-header">
+   
+    <button class="open-menu" type="button">
+      <div class="open-menu-icon"></div>
+    </button>
+      <section class="bottom-header">
+      	    <h2 class="visually-hidden">Фото уверенного в себе адвоката и дополнительное меню</h2>
+      <div class="photo">
+      	 <div class="top-header">
 	<?php
 			if ( !is_front_page() ) :
 				?>
@@ -44,9 +51,28 @@
     <?php endif?>
 		<?php dynamic_sidebar( 'contacts' ); ?>
 	</div>
-    <button class="open-menu" type="button">
-      <div class="open-menu-icon"></div>
-    </button>
+
+      <!-- играем с меню -->
+      <div class='secondary-menu-wrap'>
+      <button class="secondary-nav-description" type="button">Адвокатская практика</button>
+
+      	    		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'rightMenu',
+				'items_wrap'      => '<ul  class="secondary-nav">%3$s</ul>',
+				'container'       => false, 
+				'link_before'     => '<div class="secondary-nav-description">',
+				'link_after'      => '</div>',
+			) );
+			?>
+        </div>
+        <p>Адвокатская практика<br>
+          <span class="practiceInYears"></span>
+        </p>
+    </div>
+
+    
+    </section>
     <nav class="main-menu">
 
     		<?php
@@ -56,27 +82,7 @@
 			) );
 			?>
     </nav>
-    <section class="bottom-header">
-      <h2 class="visually-hidden">Фото уверенного в себе адвоката и дополнительное меню</h2>
-      <div class="photo">
-        <p>Адвокатская практика<br>
-          <span class="practiceInYears"></span>
-        </p>
-      </div>
-      <div class='secondary-menu-wrap'>
-      <button class="secondary-nav-description" type="button">Адвокатская практика</button>
-
-      	    		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'rightMenu',
-				'items_wrap'      => '<ul  class="secondary-nav">%3$s</ul>',
-				'container'       => false, 
-				'link_before'     => '<div class="secondary-nav-picture"></div><div class="secondary-nav-description">',
-				'link_after'      => '</div>',
-			) );
-			?>
-        </div>
-    </section>
+  
   </header>
   <main class="main-content">
 
