@@ -68,12 +68,12 @@ body {
   display:flex;
 }
 .top-header {
+  padding: 40px 20px;
   width: 50%;
-  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
@@ -158,6 +158,7 @@ body {
 }
 
 .main-menu {
+  margin-top:10px;
   padding: 10px;
   background: #000000;
   border-radius: 10px;
@@ -263,13 +264,8 @@ li.current_page_item a{
 }
 
 .bottom-header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-self: flex-end;
-    margin-top: 20px;
-  padding: 10px;
+  position: relative;
+  padding: 10px 10px 1px 10px;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.05);
 }
@@ -280,11 +276,15 @@ li.current_page_item a{
 }
 
 .practice {
-  position:absolute;
-  margin-top: 0;
-  text-align: center;
-  font-family: 'Andantino', arial, cursive;
-  font-size: 38px;
+    position: absolute;
+    margin: 0;
+    text-align: left;
+    font-family: 'Andantino', arial, cursive;
+    width: 130px;
+    font-size: 38px;
+    top: 30px;
+    left: 0;
+    margin-left: 20px;
 }
 button.secondary-nav-description{
   display:none;
@@ -294,9 +294,8 @@ button.secondary-nav-description{
 .secondary-nav {
     margin: 0;
     height: 100%;
-    width: 400px;
+    width: 100%;
     padding: 0;
-    padding-left: 110px;
     display: flex;
     margin-left: 20px;
     flex-direction: column;
@@ -309,6 +308,7 @@ button.secondary-nav-description{
   display:flex;
   flex-direction: column;
   align-items: flex-end;
+      width: 100%;
 }
 .secondary-nav a {
   display: block;
@@ -316,15 +316,16 @@ button.secondary-nav-description{
 }
 
 .secondary-nav-description {
-  margin: 10px 0;
-  max-width: 240px;
-  color: #ffffff;
-  border-radius: 10px;
-  border: 2px solid #919191;
-  padding: 10px;
-  background: rgba(0,0,0,0.4);
-  transition: all 0.5s;
-  box-shadow: 5px 5px 10px 0 black;
+    margin: 10px auto;
+    max-width: 350px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #919191;
+    padding: 10px;
+    background: rgba(0,0,0,0.4);
+    transition: all 0.5s;
+    box-shadow: 5px 5px 10px 0 black;
 }
 
 .secondary-nav li {
@@ -424,7 +425,7 @@ li.current_page_item div{
 .main-content {
   padding: 10px 40px;
   letter-spacing: 1px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   text-align: left;
   font-size: 16px;
@@ -452,8 +453,9 @@ li.current_page_item div{
 }
 .entry-content img{
   margin:auto;
-  margin-left:-20px;
+ /* margin-left:-20px;*/
   max-width:100%;
+
 }
 
 .entry-content iframe{

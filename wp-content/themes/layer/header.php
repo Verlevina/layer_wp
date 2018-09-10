@@ -30,19 +30,24 @@
 <![endif]-->
 <div class="wrapper">
   <header class="main-header">
-   <nav class="main-menu">
-
-        <?php
-      wp_nav_menu( array(
-        'theme_location' => 'mainMenu',
-        'container'       => false, 
-      ) );
-      ?>
-    </nav>
+  
     <button class="open-menu" type="button">
       <div class="open-menu-icon"></div>
     </button>
-         <div>
+      
+    <section class="wrap-header">
+      <div class="bottom-header">
+      	    <h2 class="visually-hidden">Фото уверенного в себе адвоката</h2>
+     
+      	<img src="<?php bloginfo("template_url"); ?>/img/layerM.jpg" alt="Фото адвоката Эдуарда Марцинкевича.">
+        <p class="practice">Адвокатская практика
+          <span class="practiceInYears"></span>
+        </p>
+    </div>
+  
+
+ <div class="top-header">
+   
         <?php
       if ( !is_front_page() ) :
         ?>
@@ -54,22 +59,10 @@
         ?>
       </a>
     <?php endif?>
-    <?php dynamic_sidebar( 'contacts' ); ?>
-     </div>
-    <section class="wrap-header">
-      <div class="bottom-header">
-      	    <h2 class="visually-hidden">Фото уверенного в себе адвоката</h2>
-      <div class="photo">
-      	<img src="<?php bloginfo("template_url"); ?>/img/layerM.jpg" width="600px" alt="Фото адвоката Эдуарда Марцинкевича.">
-        <p class="practice">Адвокатская практика<br>
-          <span class="practiceInYears"></span>
-        </p>
-    </div>
-     </div>
+ 
 
- <div class="top-header">
        <div class='secondary-menu-wrap'>
-      <button class="secondary-nav-description" type="button">Адвокатская практика</button>
+      <button class="secondary-nav-description" type="button"></button>
 
                 <?php
       wp_nav_menu( array(
@@ -81,10 +74,19 @@
       ) );
       ?>
         </div>
-  </div>
 
-    
-</section>  
+   <?php dynamic_sidebar( 'contacts' ); ?>
+     </div> 
+</section> 
+ <nav class="main-menu">
+
+        <?php
+      wp_nav_menu( array(
+        'theme_location' => 'mainMenu',
+        'container'       => false, 
+      ) );
+      ?>
+    </nav> 
   </header>
   <main class="main-content">
 
