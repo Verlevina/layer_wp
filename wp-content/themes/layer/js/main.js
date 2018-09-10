@@ -34,12 +34,12 @@ function declarationOfNumbers(number, titles) {
 //   experienceText.textContent = 10 + ' лет';
 // }
 
-//всплывание второго нав меню
-var secondaryNav = document.querySelector('.secondary-nav');
-var buttonSecondaryNav = document.querySelector('button.secondary-nav-description');
-buttonSecondaryNav.addEventListener('click',function(){
-  secondaryNav.classList.toggle('visibleSecondaryNav');
-});
+// //всплывание второго нав меню
+// var secondaryNav = document.querySelector('.secondary-nav');
+// var buttonSecondaryNav = document.querySelector('button.secondary-nav-description');
+// buttonSecondaryNav.addEventListener('click',function(){
+//   secondaryNav.classList.toggle('visibleSecondaryNav');
+// });
 //main menu
 //всплывание второго нав меню
 var mainMenu = document.querySelector('.main-menu');

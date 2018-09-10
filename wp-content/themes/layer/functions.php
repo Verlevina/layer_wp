@@ -45,7 +45,6 @@ if ( ! function_exists( 'layer_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'mainMenu' => esc_html__( 'Primary', 'layer' ),
-			'rightMenu' => esc_html__( 'Sidebar', 'layer' ),
 			// 'rightMenu' => esc_html__( 'SideBar, 'layer1' ),
 		) );
 
@@ -110,7 +109,7 @@ function layer_widgets_init() {
 		'name'          => esc_html__( 'Contacts', 'layer' ),
 		'id'            => 'contacts',
 		'description'   => esc_html__( 'Your contacts', 'layer' ),
-		'before_widget' => '<section id="%1$s" class="header-contacts %2$s">',
+		'before_widget' => '<section class="header-contacts %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
@@ -120,7 +119,7 @@ function layer_widgets_init() {
 		'name'          => esc_html__( 'logo', 'layer' ),
 		'id'            => 'logo',
 		'description'   => esc_html__( 'Your name', 'layer' ),
-		'before_widget' => '<div id="%1$s" class="logo %2$s">',
+		'before_widget' => '<div class="logo %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => false,
 		'after_title'   => false,

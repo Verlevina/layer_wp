@@ -16,6 +16,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <meta name="Keywords" content=""> 
   <meta name="description" content="<?php bloginfo( 'description' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -56,21 +57,7 @@
         ?>
       </a>
     <?php endif?>
- 
 
-<div class='secondary-menu-wrap visually-hidden'>
-      <button class="secondary-nav-description" type="button"></button>
-
-                <?php
-      wp_nav_menu( array(
-        'theme_location' => 'rightMenu',
-        'items_wrap'      => '<ul  class="secondary-nav">%3$s</ul>',
-        'container'       => false, 
-        'link_before'     => '<div class="secondary-nav-description">',
-        'link_after'      => '</div>',
-      ) );
-      ?>
-        </div> 
 
    <?php dynamic_sidebar( 'contacts' ); ?>
      </div> 
