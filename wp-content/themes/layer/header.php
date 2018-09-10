@@ -30,59 +30,61 @@
 <![endif]-->
 <div class="wrapper">
   <header class="main-header">
-   
+   <nav class="main-menu">
+
+        <?php
+      wp_nav_menu( array(
+        'theme_location' => 'mainMenu',
+        'container'       => false, 
+      ) );
+      ?>
+    </nav>
     <button class="open-menu" type="button">
       <div class="open-menu-icon"></div>
     </button>
-      <section class="bottom-header">
-      	    <h2 class="visually-hidden">Фото уверенного в себе адвоката и дополнительное меню</h2>
-      <div class="photo">
-      	 <div class="top-header">
-	<?php
-			if ( !is_front_page() ) :
-				?>
+         <div>
+        <?php
+      if ( !is_front_page() ) :
+        ?>
       <a class="main-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-      	<?php endif?>
+        <?php endif?>
         <?php dynamic_sidebar( 'logo' ); ?>
-        	<?php
-			if ( !is_front_page() && !is_home() ) :
-				?>
+          <?php
+      if ( !is_front_page() && !is_home() ) :
+        ?>
       </a>
     <?php endif?>
-		<?php dynamic_sidebar( 'contacts' ); ?>
-	</div>
-
-      <!-- играем с меню -->
-      <div class='secondary-menu-wrap'>
-      <button class="secondary-nav-description" type="button">Адвокатская практика</button>
-
-      	    		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'rightMenu',
-				'items_wrap'      => '<ul  class="secondary-nav">%3$s</ul>',
-				'container'       => false, 
-				'link_before'     => '<div class="secondary-nav-description">',
-				'link_after'      => '</div>',
-			) );
-			?>
-        </div>
-        <p>Адвокатская практика<br>
+    <?php dynamic_sidebar( 'contacts' ); ?>
+     </div>
+    <section class="wrap-header">
+      <div class="bottom-header">
+      	    <h2 class="visually-hidden">Фото уверенного в себе адвоката</h2>
+      <div class="photo">
+      	<img src="<?php bloginfo("template_url"); ?>/img/layerM.jpg" width="600px" alt="Фото адвоката Эдуарда Марцинкевича.">
+        <p class="practice">Адвокатская практика<br>
           <span class="practiceInYears"></span>
         </p>
     </div>
+     </div>
+
+ <div class="top-header">
+       <div class='secondary-menu-wrap'>
+      <button class="secondary-nav-description" type="button">Адвокатская практика</button>
+
+                <?php
+      wp_nav_menu( array(
+        'theme_location' => 'rightMenu',
+        'items_wrap'      => '<ul  class="secondary-nav">%3$s</ul>',
+        'container'       => false, 
+        'link_before'     => '<div class="secondary-nav-description">',
+        'link_after'      => '</div>',
+      ) );
+      ?>
+        </div>
+  </div>
 
     
-    </section>
-    <nav class="main-menu">
-
-    		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'mainMenu',
-				'container'       => false, 
-			) );
-			?>
-    </nav>
-  
+</section>  
   </header>
   <main class="main-content">
 

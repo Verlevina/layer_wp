@@ -52,7 +52,7 @@ body {
   color:rgb(255, 0, 0);
 }
 .wrapper {
-  padding: 20px 10px;
+  padding: 10px 20px 20px 10px;
   max-width: 1200px;
   margin: auto;
   box-shadow: 0 10px 300px 10px #000000;
@@ -61,11 +61,14 @@ body {
 }
 
 .main-header {
-  padding-top: 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
+.wrap-header{
+  display:flex;
+}
 .top-header {
+  width: 50%;
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +76,7 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
 }
+
 
 .logo {
   font-size: 26px;
@@ -154,11 +158,10 @@ body {
 }
 
 .main-menu {
-  margin-top: 20px;
   padding: 10px;
   background: #000000;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.65);
 }
 .open-menu{
   display:none;
@@ -267,22 +270,17 @@ li.current_page_item a{
   align-self: flex-end;
     margin-top: 20px;
   padding: 10px;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
 .bottom-header .photo {
-  flex-grow: 2;
-
-  background-color: #eda26b;
-  background-image: url('../img/layer.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 300px;
-  background-position-x: 50%;
+  background-color: #090909;
   color: #000000;
 }
 
-.photo p {
+.practice {
+  position:absolute;
   margin-top: 0;
   text-align: center;
   font-family: 'Andantino', arial, cursive;
@@ -682,6 +680,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
 }
   .bottom-header{
     display:block;
+    width: 50%;
   }
   button.secondary-nav-description{
     display:block;
@@ -748,8 +747,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
     .main-content .post{
    margin-bottom: 10px;
   }
-  .photo p {
-      font-size: 20px;}
+  .photo p{
+      font-size: 20px;
+    }
 
   .secondary-nav {
       padding-left: 70px;}
