@@ -69,12 +69,12 @@ body {
 }
 .top-header {
   padding: 40px 20px;
-  width: 50%;
+/*  width: 50%;*/
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-end;*/
 }
 
 
@@ -435,7 +435,6 @@ li.current_page_item div{
 
 .entry-content,
 .main-content .post{
-  text-indent: 20px;
   margin-bottom: 40px;
   margin-top:0;
   padding: 20px 40px 20px 40px;
@@ -453,7 +452,7 @@ li.current_page_item div{
 }
 .entry-content img{
   margin:auto;
- /* margin-left:-20px;*/
+
   max-width:100%;
 
 }
@@ -461,7 +460,7 @@ li.current_page_item div{
 .entry-content iframe{
   height: 400px;
     width: 100%;
-    margin-left: -20px
+
 }
 
 .post .entry-title{

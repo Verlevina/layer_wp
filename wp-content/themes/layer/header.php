@@ -35,15 +35,12 @@
       <div class="open-menu-icon"></div>
     </button>
       
-    <section class="wrap-header">
-      <div class="bottom-header">
-      	    <h2 class="visually-hidden">Фото уверенного в себе адвоката</h2>
-     
-      	<img src="<?php bloginfo("template_url"); ?>/img/layerM.jpg" alt="Фото адвоката Эдуарда Марцинкевича.">
+<!--     <section class="wrap-header">
+      <div class="bottom-header">     
         <p class="practice">Адвокатская практика
           <span class="practiceInYears"></span>
         </p>
-    </div>
+    </div> -->
   
 
  <div class="top-header">
@@ -61,7 +58,7 @@
     <?php endif?>
  
 
-       <div class='secondary-menu-wrap'>
+<div class='secondary-menu-wrap visually-hidden'>
       <button class="secondary-nav-description" type="button"></button>
 
                 <?php
@@ -73,7 +70,7 @@
         'link_after'      => '</div>',
       ) );
       ?>
-        </div>
+        </div> 
 
    <?php dynamic_sidebar( 'contacts' ); ?>
      </div> 

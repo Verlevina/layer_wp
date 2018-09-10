@@ -27,12 +27,12 @@ function declarationOfNumbers(number, titles) {
   }
 }
 
-var numberTitle = declarationOfNumbers(experience, ['год', 'года', 'лет']);
-if (experience) {
-  experienceText.textContent = experience + ' ' + numberTitle;
-} else {
-  experienceText.textContent = 10 + ' лет';
-}
+// var numberTitle = declarationOfNumbers(experience, ['год', 'года', 'лет']);
+// if (experience) {
+//   experienceText.textContent = experience + ' ' + numberTitle;
+// } else {
+//   experienceText.textContent = 10 + ' лет';
+// }
 
 //всплывание второго нав меню
 var secondaryNav = document.querySelector('.secondary-nav');
